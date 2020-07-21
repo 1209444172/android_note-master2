@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".threadpool.ThreadPoolActivity"></activity>
+        <activity android:name=".HookDemo.SecondActivity" />
+        <activity android:name=".DesignPatternsDemo.VisitorActivity" />
+        <activity android:name=".DesignPatternsDemo.InterpreterActivity" />
+        <activity android:name=".DesignPatternsDemo.FlyweightModeActivity" />
+        <activity android:name=".DesignPatternsDemo.ChainOfResponsibilityActivity" />
+        <activity android:name=".DesignPatternsDemo.CommandActivity" />
+        <activity android:name=".DesignPatternsDemo.BridgeActivity" />
+        <activity android:name=".DesignPatternsDemo.IteratorActivity" />
+        <activity android:name=".DesignPatternsDemo.MementoActivity" />
+        <activity android:name=".DesignPatternsDemo.AdapterActivity" />
+        <activity android:name=".DesignPatternsDemo.StateModeActivity" />
+        <activity android:name=".DesignPatternsDemo.PrototypeModeActivity" />
+        <activity android:name=".DesignPatternsDemo.DecoratormodeActivity" />
+        <activity android:name=".DesignPatternsDemo.StrategyModeActivity" />
+        <activity android:name=".DesignPatternsDemo.MainDesignActivity" />
+        <activity android:name=".HookDemo.HookActivity" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".MainAidlActivity" />
+        <activity android:name=".aidl.AidlActivity" />
+        <activity android:name=".HashMapDemo.HashMapActivity" />
+        <activity android:name=".KotlinDemo.KotlinActivity" />
+        <activity android:name=".mvvmDemo.MvvmRecyclerViewActivity" />
+        <activity android:name=".mvvmDemo.MvvmActivity" />
+        <activity android:name=".MvpDemo.LoginActivity" />
+        <activity android:name=".Rxjava.RxjavaActivity" />
+        <activity android:name=".EventBusDemo.EventActivity" />
+        <activity android:name=".DraggerDemo.DragActivity" />
+        <activity android:name=".ActivityAnnotation" />
+        <service android:name=".threadpool.MuyIntentService"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".aidl.BookManagerService"
+            android:process=":remote">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="com.example.android.aidl.BookManagerService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
